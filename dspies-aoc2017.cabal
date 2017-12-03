@@ -1,0 +1,28 @@
+name:                dspies-aoc2017
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/davidspies/dspies-aoc2017#readme
+license:             GPL-3
+license-file:        LICENSE
+author:              David Spies
+maintainer:          dnspies@gmail.com
+copyright:           2017
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Day1
+                       Day2
+                       Day3
+                       Day3.Fast
+  build-depends:       base >= 4.7 && < 5, containers
+  default-language:    Haskell2010
+  ghc-options:         -Wall -Werror
+
+source-repository head
+  type:     git
+  location: https://github.com/davidspies/dspies-aoc2017
