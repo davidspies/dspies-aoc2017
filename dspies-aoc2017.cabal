@@ -21,17 +21,25 @@ library
                        Day3.Fast
                        Day4
                        Day5
-  build-depends:       base >= 4.7 && < 5, containers, vector
+                       Day13
+  build-depends:       base >= 4.7 && < 5, containers, parsec, vector
   default-language:    Haskell2010
   ghc-options:         -Wall -Werror -O2
 
 executable day5
-  hs-source-dirs:      app
+  hs-source-dirs:      day5
   main-is:             Main.hs
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N -Wall -Werror -O2
   build-depends:       base
                      , dspies-aoc2017
-                     , vector
+  default-language:    Haskell2010
+
+executable day13
+  hs-source-dirs:      day13
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N -Wall -Werror -O2
+  build-depends:       base
+                     , dspies-aoc2017
   default-language:    Haskell2010
 
 source-repository head
